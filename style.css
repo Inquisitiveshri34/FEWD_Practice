@@ -7,11 +7,26 @@
 }
 
 body{
-    overflow: hidden;
+    background-color: #ffebd444;
 }
 
-.pagetitle{
-    height: 100px;
+
+#pagetitle{
+    background-color: #F0A8D077;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.month{
+    background-color:  #F7B5CA77;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.todaydate{
+    background-color:#FFC6C677;
+    padding: 0.5rem;
+    border-radius: 1rem;
 }
 
 .assignment-list{
@@ -23,6 +38,7 @@ body{
     padding: 0.5rem;
     border-radius: 1rem;
     margin: 1rem;
+    background-color: #FFEBD477;
 }
 
 a{
