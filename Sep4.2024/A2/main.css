@@ -1,0 +1,42 @@
+*{
+    font-weight: 900;
+}
+
+.container{
+    margin-left: 25vw;
+    margin-top:10vh;
+    height: 500px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 20px;
+    padding: 30px;
+    box-shadow: 0 0 4px grey;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 4px grey;
+    height: 80px;
+    width: 80px;
+}
+
+.inbox{
+    grid-column: 1/-1;
+    border-radius: 1rem;
+    box-shadow: 0 0 4px grey;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.redbg{
+    background-color: red;
+    color: white
+}

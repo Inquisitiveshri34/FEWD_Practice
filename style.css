@@ -1,0 +1,32 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+body{
+    overflow: hidden;
+}
+
+.pagetitle{
+    height: 100px;
+}
+
+.assignment-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.btn{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;   
+}
+
