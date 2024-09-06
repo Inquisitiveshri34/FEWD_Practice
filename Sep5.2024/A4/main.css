@@ -33,7 +33,34 @@ nav{
 
 .rbox{
     height: 30%;
+    width: 100%;
 }
+
+@media (max-width:768px) {
+    
+    .main-content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .box{
+        margin: 1vh;
+        height: 200px;
+        width: 98vw;
+    }
+
+    .rbox-main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .rbox{
+        height: 30%;
+        width: 30%;
+    }
+}
+
 
 @media (max-width:576px) {
     
@@ -47,6 +74,18 @@ nav{
         height: 200px;
         width: 98vw;
     }
+
+    .rbox-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .rbox{
+        height: 30%;
+        width: 100%;
+    }
+    
 }
 
 

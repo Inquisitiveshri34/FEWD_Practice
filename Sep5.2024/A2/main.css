@@ -1,0 +1,57 @@
+*{
+    text-align: center;
+}
+
+h1,h3{
+    color: #192F4B;
+}
+
+p{
+    color: #6D6D6D;
+}
+
+.priceStarter{
+    color: #08AA78;
+}
+
+.priceBusiness{
+    color: #F27E42;
+}
+
+.pricePremium{
+    color: #4294F2;
+}
+
+.btn{
+    border: 1px solid #007AFE;
+    color: #007AFE;
+    background-color: white;
+    width: 160px;
+    height: 50px;
+    border-radius: 0.5rem;
+}
+
+.btnfill{
+    background-color: #007AFE;
+    color: white;
+}
+
+.box{
+    width: 250px;
+    height: 300px;
+    border: 2px solid white;
+    padding: 1rem;
+    text-align: center;
+    margin: 0.75rem;
+    box-shadow: 0 6px 8px #00000022;
+}
+
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 20vw;
+    width: 80vw;
+}
+
+
+
