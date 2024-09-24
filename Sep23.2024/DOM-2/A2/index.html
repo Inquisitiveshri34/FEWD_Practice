@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Check your BMI</h1>
+    <p>Enter your weight and height below to check your BMI results</p>
+    <label for="weight">Put your weight in here (KG)</label>
+    <br>
+    <br>
+    <input type="number" name="weight" id="weight">
+    <br/>
+    <br>
+    <label for="height">And your height in here(CM)</label>
+    <br>
+    <br>
+    <input type="number" name="height" id="height">
+    <br/>
+    <button class="btn">Calculate BMI</button>
+    <p>Your BMI is <span id="BMIcal"></span> which means You are <span id = "BMIresults"></span></p>
+</body>
+<script>
+    const btn = document.querySelector(".btn");
+    btn.addEventListener("click",()=>{
+        const weight = document.querySelector("#weight").value;
+        const height = document.querySelector("#height").value/100;
+        const BMIcal = document.querySelector("#BMIcal");
+        const BMIresults = document.querySelector("#BMIresults");
+        const BMI = weight/(height*height);
+        BMIcal.textContent = BMI.toFixed(1);
+        if (BMIcal<=18.4){
+            BMIresults.textContent = "Underweight";
+        } else if (BMIcal <=24.9){
+            BMIresults.textContent = "Normalweight";
+        } else if(BMIcal <= 29.9){
+            BMIresults.textContent = "Overweight";
+        } else{
+            BMIresults.textContent = "Obese";
+        }
+    })
+</script>
+</html>

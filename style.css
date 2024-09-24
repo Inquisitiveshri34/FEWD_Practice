@@ -17,7 +17,7 @@ body{
     border: 2px solid #F0A8D0FF;
 }
 
-.month{
+.month,.asideBarSubHead{
     background-color:  #F7B5CA77;
     padding: 1rem;
     border-radius: 1rem;
@@ -27,6 +27,13 @@ body{
 .todaydate{
     background-color:#FFC6C677;
     padding: 0.75rem;
+    border-radius: 1rem;
+    border: 2px solid #FFC6C6FF;
+}
+
+.topic-assignment{
+    background-color:#FFC6C622;
+    padding: 0.5rem;
     border-radius: 1rem;
     border: 2px solid #FFC6C6FF;
 }
@@ -51,6 +58,14 @@ body{
 a{
     text-decoration: none;
     color: black; 
-     
 }
 
+
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+  }
