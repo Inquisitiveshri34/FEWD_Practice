@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Age Check</h1>
+        <label for="age"></label>
+        <input type="number" name="age" id="age">
+        <button id="btn">Submit</button>
+    </div>
+</body>
+<script>
+    let main = document.querySelector(".main")
+    let btn = document.querySelector("#btn");
+    let data = document.querySelector("p") ? document.querySelector("p") : document.createElement("p");
+    btn.addEventListener("click",()=>{
+        let ageInput = document.querySelector("#age");
+        let age = ageInput.value;
+        if(age<18){
+            data.textContent = "You can't drive in India"
+        } else if(age > 18){
+            data.textContent = "You can drive in India!"
+        } else{
+            data.textContent = "You are just old enough to drive in India!"
+        }
+        main.append(data);
+    })
+</script>
+</html>

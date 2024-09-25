@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Content Manipulation</title>
+</head>
+<body>
+	<h1 id="firstname">Hello</h1>
+	<div id="lastname">Kalvian</div>
+	<p id="fullname">Students</p>
+	<hr/>
+    <label for="fName">First Name: </label>
+    <input type="text" name="fName" id="fName" required>
+    <br>
+    <label for="lName">Last Name: </label>
+    <input type="text" name="lName" id="lName" required>
+    <br>
+	<button onclick="setFirstName()">FIRSTNAME</button>
+	<button onclick="setLastName()">LASTNAME</button>
+	<button onclick="setFullName()">FIRSTNAME NAME</button>
+	<button onclick="resetDefaults()">RESET DEFAULTS</button>
+	<script type="text/javascript">
+		function setFirstName() {
+			// Change the content of h1 to your first name
+            let fNameHead = document.getElementById("firstname");
+            let fNameInput = document.getElementById("fName");
+            fNameHead.textContent = fNameInput.value;
+		}
+
+		function setLastName() {
+			// Change the content of div to your last name
+            let lNameHead = document.getElementById("lastname");
+            let lNameInput = document.getElementById("lName");
+            lNameHead.innerHTML = `<span>${lNameInput.value}<span>`;
+		}
+
+		function setFullName() {
+			// Change the content of p to your full name (firstname - lastname)
+            let fullNameHead = document.getElementById("fullname");
+            let fNameInput = document.getElementById("fName");
+            let lNameInput = document.getElementById("lName");
+            fullNameHead.textContent = fNameInput.value + lName.value;
+		}
+
+		function resetDefaults(){
+			// reset the firstname, lastname, and fullname to empty values
+            let fNameHead = document.getElementById("firstname");
+            let lNameHead = document.getElementById("lastname");
+            let fullNameHead = document.getElementById("fullname");
+            fNameHead.textContent = "";
+            lNameHead.textContent = "";
+            fullNameHead.textContent = "";
+		}
+	</script>
+</body>
+</html>
